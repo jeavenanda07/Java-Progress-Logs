@@ -1,3 +1,5 @@
+//JEAVEN A. PARAS
+
 import java.util.Scanner;
 
 class ATM {
@@ -61,7 +63,6 @@ class ATM {
             System.out.println("\nYou withdraw: " + amount  + "php");
             System.out.println("Current balance: " + balance  + "php");
         }
-       // scanner.close();
     }
 
     static void exit(){
