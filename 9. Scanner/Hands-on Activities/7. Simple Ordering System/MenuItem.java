@@ -1,4 +1,4 @@
-class MenuItem {
+public class MenuItem {
     String food;
     int price;
 
@@ -7,7 +7,7 @@ class MenuItem {
         this.price = price;
     }
 
-    public void display(int i) {
-        System.out.println((i + 1) + "." + food + " - " + price + "php");
+    public void displayMenu(){
+        System.out.println(food + " - " + price);
     }
 }

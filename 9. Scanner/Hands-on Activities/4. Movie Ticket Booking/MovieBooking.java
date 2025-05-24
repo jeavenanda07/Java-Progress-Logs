@@ -13,16 +13,16 @@ class MovieBooking {
             System.out.println((i + 1) + ". " + movies[i] + " - Seats: " + seats[i]);
         }
 
-        System.out.println("\nChoose movie number: ");
+        System.out.print("\nChoose movie number: ");
         int choice = scanner.nextInt();
 
         if(choice >= 0  && choice < movies.length){
-            System.out.println("\nEnter a number of tickets: ");
+            System.out.print("Enter a number of tickets: ");
             int tickets = scanner.nextInt();
 
             if(tickets <= seats[choice]){
                 seats[choice] -= tickets;
-                    System.out.println("\nBooking successful for " + tickets + " ticket(s) to " + movies[choice]);
+                    System.out.println("\nBooking successful for " + tickets + " ticket(s) to " + movies[choice] + "\n");
             } else {
                 System.out.println("\nNot enough seats available");
             }

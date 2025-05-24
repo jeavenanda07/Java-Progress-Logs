@@ -6,7 +6,7 @@ class Library {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter your name:");
+        System.out.print("\nEnter your name:");
         String userName = scanner.nextLine();
 
         System.out.println("\nAvailable Books:");
@@ -17,21 +17,21 @@ class Library {
             System.out.println(bookNum + ". " + book);
         }
 
-        System.out.println("\nEnter the number of the book to borrow:");
+        System.out.print("\nEnter the number of the book to borrow: ");
         int numPicked = scanner.nextInt();
 
         switch (numPicked) {
             case 1:
-                System.out.println("\nThank you, " + userName + ". You have borrowed " + books[0] + ".");
+                System.out.println("\nThank you, " + userName + ". You have borrowed " + books[0] + ".\n");
                 break;
             case 2:
-                System.out.println("\nThank you, " + userName + ". You have borrowed " + books[1] + ".");
+                System.out.println("\nThank you, " + userName + ". You have borrowed " + books[1] + ".\n");
                 break;
             case 3:
-                 System.out.println("\nThank you, " + userName + ". You have borrowed " + books[2] + ".");
+                 System.out.println("\nThank you, " + userName + ". You have borrowed " + books[2] + ".\n");
                  break;
             case 4:
-                  System.out.println("\nThank you, " + userName + ". You have borrowed " + books[3] + ".");
+                  System.out.println("\nThank you, " + userName + ". You have borrowed " + books[3] + ".\n");
                   break;
             default:
                 System.out.println("\nInvalid Number");

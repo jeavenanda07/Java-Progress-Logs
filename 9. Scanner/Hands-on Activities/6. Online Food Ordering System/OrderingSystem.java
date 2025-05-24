@@ -3,6 +3,7 @@ import java.util.Scanner;
 class OrderingSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         MenuItem[] menu = {
             new MenuItem("Burger", 80),
             new MenuItem("Pizza",  120),
@@ -20,7 +21,7 @@ class OrderingSystem {
             menu[i].display(i);
         }
 
-        System.out.print("\nSelects up to 3 times (enter numbers seperated): ");
+        System.out.print("\nSelects up to 3 times (enter numbers separated): ");
 
         for(int i = 0; i < numberOrder.length; i++){
             numberOrder[i] = scanner.nextInt();

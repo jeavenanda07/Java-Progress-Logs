@@ -14,7 +14,7 @@ class ATM {
             System.out.println("2. Deposit");
             System.out.println("3. Withdraw");
             System.out.println("4. Exit");
-            System.out.println("\nChoose an option");
+            System.out.print("\nChoose an option: ");
             choice = scanner.nextInt();
 
             switch (choice) {
@@ -42,7 +42,7 @@ class ATM {
     }
 
     static void deposit(Scanner scanner){
-        System.out.println("Enter amount to deposit: ");
+        System.out.print("Enter amount to deposit: ");
         double amount = scanner.nextInt();
 
         balance += amount;
@@ -51,7 +51,7 @@ class ATM {
     }
 
     static void withdraw(Scanner scanner){
-        System.out.println("Enter amount to withdraw: ");
+        System.out.print("Enter amount to withdraw: ");
         double amount = scanner.nextDouble();
 
         if(amount > balance){
